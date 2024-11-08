@@ -7,3 +7,5 @@ tesla_turret.energy_source.drain = "133.7kW"
 tesla_turret.energy_source.buffer_capacity = "43MJ"
 tesla_turret.energy_source.input_flow_limit = "43MW"
 tesla_turret.attack_parameters.ammo_type.energy_consumption = "42MJ"
+
+data.raw["cargo-bay"]["cargo-bay"].inventory_size_bonus = 128

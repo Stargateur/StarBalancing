@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2024-11-08
+  Changes:
+    - Cargo bay bonus is now 128 to counter balance belt stacking. Better solution would be
+      that asteroids stack to 50/100 but that would require asteroid collector to be reworked.
+      (asteroid chunk need to multiply inside the collector or something like that)
+---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 2024-11-08
   Changes:
