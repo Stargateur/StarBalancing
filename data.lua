@@ -2,6 +2,7 @@ data.raw["ammo-turret"]["gun-turret"].max_health = 1000
 data.raw["ammo-turret"]["rocket-turret"].max_health = 1800
 
 data.raw["roboport"]["roboport"].energy_source.input_flow_limit = "2.1MW"
+data.raw["roboport"]["roboport"].energy_source.buffer_capacity = "10MJ"
 
 local tesla_turret = data.raw["electric-turret"]["tesla-turret"]
 tesla_turret.max_health = 2000
