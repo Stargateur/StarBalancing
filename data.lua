@@ -1,15 +1,25 @@
-data.raw["ammo-turret"]["gun-turret"].max_health = 1000
-data.raw["ammo-turret"]["rocket-turret"].max_health = 1800
+local ammo_turret = data.raw["ammo-turret"]
+ammo_turret["gun-turret"].max_health = 1000
 
-data.raw["roboport"]["roboport"].energy_source.input_flow_limit = "2.1MW"
-data.raw["roboport"]["roboport"].energy_source.buffer_capacity = "10MJ"
-data.raw["roboport"]["roboport"].recharge_minimum = "4MJ"
+if ammo_turret["rocket-turret"] then
+  ammo_turret["rocket-turret"].max_health = 1800
+end
 
-local tesla_turret = data.raw["electric-turret"]["tesla-turret"]
-tesla_turret.max_health = 2000
-tesla_turret.energy_source.drain = "133.7kW"
-tesla_turret.energy_source.buffer_capacity = "43MJ"
-tesla_turret.energy_source.input_flow_limit = "43MW"
-tesla_turret.attack_parameters.ammo_type.energy_consumption = "42MJ"
+local roboport = data.raw["roboport"]["roboport"]
+roboport.energy_source.input_flow_limit = "2.1MW"
+roboport.energy_source.buffer_capacity = "10MJ"
+roboport.recharge_minimum = "4MJ"
 
-data.raw["cargo-bay"]["cargo-bay"].inventory_size_bonus = 128
+if data.raw["electric-turret"]["tesla-turret"] then
+  local tesla_turret = data.raw["electric-turret"]["tesla-turret"]
+  tesla_turret.max_health = 2000
+  tesla_turret.energy_source.drain = "133.7kW"
+  tesla_turret.energy_source.buffer_capacity = "43MJ"
+  tesla_turret.energy_source.input_flow_limit = "43MW"
+  tesla_turret.attack_parameters.ammo_type.energy_consumption = "42MJ"
+end
+
+if data.raw["cargo-bay"] and data.raw["cargo-bay"]["cargo-bay"] then
+  local cargo_bay = data.raw["cargo-bay"]["cargo-bay"]
+  cargo_bay.inventory_size_bonus = 128
+end
