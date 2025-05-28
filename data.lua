@@ -1,5 +1,6 @@
 local ammo_turret = data.raw["ammo-turret"]
 ammo_turret["gun-turret"].max_health = 1000
+ammo_turret["gun-turret"].attack_parameters.range = 27
 
 if ammo_turret["rocket-turret"] then
   ammo_turret["rocket-turret"].max_health = 1800

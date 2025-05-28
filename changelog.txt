@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: 2025-05-28
+  Features:
+    - Gun turret now has 27 range from 18, this is cause laser turret are way easier to use,
+      player should be rewarded for using gun turret.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.7
 Date: 2024-11-14
   Features:
