@@ -24,3 +24,22 @@ if data.raw["cargo-bay"] and data.raw["cargo-bay"]["cargo-bay"] then
   local cargo_bay = data.raw["cargo-bay"]["cargo-bay"]
   cargo_bay.inventory_size_bonus = 128
 end
+
+if data.raw["module"]["quality-module"] then
+  data.raw["module"]["quality-module"].effect.consumption = 0.4
+end
+
+if data.raw["module"]["quality-module-2"] then
+  data.raw["module"]["quality-module-2"].effect.speed = -0.10
+  data.raw["module"]["quality-module-2"].effect.consumption = 0.5
+end
+
+if data.raw["module"]["quality-module-3"] then
+  data.raw["module"]["quality-module-3"].effect.quality = 0.4
+  data.raw["module"]["quality-module-3"].effect.speed = -0.15
+  data.raw["module"]["quality-module-3"].effect.consumption = 0.6
+end
+
+if data.raw["module"]["efficiency-module-3"] then
+  data.raw["module"]["efficiency-module-3"].effect.consumption = -0.6
+end
