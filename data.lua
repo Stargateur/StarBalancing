@@ -1,3 +1,5 @@
+local kg = 1000
+
 local ammo_turret = data.raw["ammo-turret"]
 ammo_turret["gun-turret"].max_health = 1000
 ammo_turret["gun-turret"].attack_parameters.range = 27
@@ -43,3 +45,7 @@ end
 if data.raw["module"]["efficiency-module-3"] then
   data.raw["module"]["efficiency-module-3"].effect.consumption = -0.6
 end
+
+data.raw["item"]["uranium-ore"].weight = 1000 * kg / 500
+data.raw["item"]["uranium-235"].weight = 1000 * kg / 100
+data.raw["item"]["uranium-238"].weight = 1000 * kg / 100
