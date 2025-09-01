@@ -42,6 +42,18 @@ if data.raw["module"]["quality-module-3"] then
   data.raw["module"]["quality-module-3"].effect.consumption = 0.6
 end
 
+if data.raw["module"]["speed-module"] then
+  data.raw["module"]["speed-module"].effect.quality = 0
+end
+
+if data.raw["module"]["speed-module-2"] then
+  data.raw["module"]["speed-module-2"].effect.quality = 0
+end
+
+if data.raw["module"]["speed-module-3"] then
+  data.raw["module"]["speed-module-3"].effect.quality = 0
+end
+
 if data.raw["module"]["efficiency-module-3"] then
   data.raw["module"]["efficiency-module-3"].effect.consumption = -0.6
 end

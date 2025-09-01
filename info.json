@@ -1,9 +1,9 @@
 {
   "name": "StarBalancing",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "title": "Star Balancing",
   "author": "Stargateur",
   "description": "Opinionated balancing mod",
   "factorio_version": "2.0",
-  "dependencies": ["?space-age", "base"]
+  "dependencies": ["?space-age", "base", "ArtilleryShellStack"]
 }
