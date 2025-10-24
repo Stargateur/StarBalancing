@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2025-10-24
+  Changes:
+    - Personal laser defense equipment rebalanced to be more effective but consomes more energy.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 2025-09-02
   Changes:
